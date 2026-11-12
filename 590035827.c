@@ -1,41 +1,21 @@
-/*
- * ============================================================================
- * Project Name : Student Record and Result Management System
- * Phase        : Phase 7 - Testing, Debugging & Complete System Polish
- * File Name    : 590035827.c
- * Author       : Manav Rawat (SAP ID: 590035827)
- * Course       : First-Year B.Tech Computer Science & Engineering (CSE)
- * Description  : A robust, fully tested, console-based Student Record and Result
- *                Management System in Standard C. Incorporates all features from
- *                Phases 1 through 6 with comprehensive input validation, bounds
- *                checking, and edge case resilience.
- * ============================================================================
- */
-
 #include <stdio.h>
 #include <string.h>
 
 #define MAX_STUDENTS 100
 #define TOTAL_SEMESTERS 8
 
-/* ----------------------------------------------------------------------------
- * Data Structure: struct Student
- * Models academic records and contact details for a student.
- * ---------------------------------------------------------------------------- */
 struct Student {
-    long long int sap_id;          // Unique 9-digit SAP ID (e.g., 590035827)
-    int roll_number;               // University / Class Roll Number
-    char name[100];                // Student Full Name
-    char phone_number[15];         // Contact Phone Number (e.g., "+91-9876543210")
-    char email_id[100];            // Student Email Address
-    int year;                      // Current Academic Year of Study (1 to 4)
-    int semester;                  // Current Semester of Study (1 to 8)
-    float sgpa[TOTAL_SEMESTERS];   // SGPA array for 8 semesters (-1 = unentered)
+    long long int sap_id;         
+    int roll_number;              
+    char name[100];              
+    char phone_number[15];        
+    char email_id[100];            
+    int year;                     
+    int semester;                 
+    float sgpa[TOTAL_SEMESTERS]; 
 };
 
-/* ----------------------------------------------------------------------------
- * Function Prototypes
- * ---------------------------------------------------------------------------- */
+
 void clearInputBuffer(void);
 float computeStudentCGPA(const struct Student *s, int *valid_semesters);
 void addStudent(struct Student students[], int *student_count);
@@ -48,13 +28,11 @@ void sortBySAPID(struct Student students[], int student_count);
 void sortByName(struct Student students[], int student_count);
 void academicAdvisor(const struct Student students[], int student_count);
 
-/* ----------------------------------------------------------------------------
- * Main Function: Interactive Loop and Complete Menu Integration
- * ---------------------------------------------------------------------------- */
+
 int main(void) {
-    // Array to store up to 100 students
+  
     struct Student students[MAX_STUDENTS];
-    // Counter variable to track the number of students currently stored
+  
     int student_count = 0;
     int choice = 0;
 
@@ -151,21 +129,13 @@ int main(void) {
     return 0;
 }
 
-/* ----------------------------------------------------------------------------
- * Helper Function: clearInputBuffer()
- * Flushes any remaining characters from stdin to prevent input bleed.
- * ---------------------------------------------------------------------------- */
+
 void clearInputBuffer(void) {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 }
 
-/* ----------------------------------------------------------------------------
- * Helper Function: computeStudentCGPA()
- * Calculates the CGPA for a given student strictly from available SGPAs (>= 0).
- * Any semester with SGPA == -1 is ignored.
- * Returns -1.0f if the student has no available SGPAs.
- * ---------------------------------------------------------------------------- */
+
 float computeStudentCGPA(const struct Student *s, int *valid_semesters) {
     float sum = 0.0f;
     int count = 0;
@@ -189,14 +159,7 @@ float computeStudentCGPA(const struct Student *s, int *valid_semesters) {
     return sum / (float)count;
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 1: addStudent()
- * Adds a new student record into the array after performing necessary checks:
- * - Checks if maximum capacity (100) is reached.
- * - Validates positive SAP ID and prevents duplicates.
- * - Validates Year (1-4) and Semester (1-8).
- * - Validates SGPAs (0.00-10.00 or -1 for unentered/pending semesters).
- * ---------------------------------------------------------------------------- */
+
 void addStudent(struct Student students[], int *student_count) {
     printf("\n--- [1] Add New Student ---\n");
 
@@ -291,11 +254,7 @@ void addStudent(struct Student students[], int *student_count) {
     printf("\n[Success] Student record added successfully! (Total Students: %d)\n", *student_count);
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 2: searchStudent()
- * Searches for a student by their unique SAP ID using linear search.
- * Displays full student details if found, or 'Student Not Found' message.
- * ---------------------------------------------------------------------------- */
+
 void searchStudent(const struct Student students[], int student_count) {
     printf("\n--- [2] Search Student ---\n");
 
@@ -352,10 +311,7 @@ void searchStudent(const struct Student students[], int student_count) {
     }
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 3: displayAllStudents()
- * Iterates through all stored students and prints their details in a readable format.
- * ---------------------------------------------------------------------------- */
+
 void displayAllStudents(const struct Student students[], int student_count) {
     printf("\n--- [5] Display All Students ---\n");
 
@@ -396,10 +352,7 @@ void displayAllStudents(const struct Student students[], int student_count) {
     }
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 4: deleteStudent()
- * Deletes student by SAP ID with array shifting, updating student count cleanly.
- * ---------------------------------------------------------------------------- */
+
 void deleteStudent(struct Student students[], int *student_count) {
     printf("\n--- [6] Delete Student ---\n");
 
@@ -458,10 +411,7 @@ void deleteStudent(struct Student students[], int *student_count) {
     }
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 5: calculateCGPA()
- * Searches for a student by SAP ID, computes CGPA from available SGPAs only.
- * ---------------------------------------------------------------------------- */
+
 void calculateCGPA(const struct Student students[], int student_count) {
     printf("\n--- [3] Calculate CGPA ---\n");
 
@@ -511,11 +461,7 @@ void calculateCGPA(const struct Student students[], int student_count) {
     printf("=================================================================\n");
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 6: averageCGPAByYear()
- * Computes and displays the average CGPA for each academic year (1 to 4).
- * For each year, only students with at least one valid SGPA are included.
- * ---------------------------------------------------------------------------- */
+
 void averageCGPAByYear(const struct Student students[], int student_count) {
     printf("\n--- [4] Average CGPA by Year ---\n");
 
@@ -565,12 +511,7 @@ void averageCGPAByYear(const struct Student students[], int student_count) {
     }
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 7: sortBySAPID()
- * Sorts all stored students in ascending (increasing) order of their SAP ID.
- * - Algorithm: Bubble Sort (O(n^2) worst/average, O(n) best).
- * - Structure Swapping: Swaps entire 'struct Student' records.
- * ---------------------------------------------------------------------------- */
+
 void sortBySAPID(struct Student students[], int student_count) {
     printf("\n--- [7] Sort by SAP ID ---\n");
 
@@ -605,10 +546,7 @@ void sortBySAPID(struct Student students[], int student_count) {
     displayAllStudents(students, student_count);
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 8: sortByName()
- * Sorts all stored students alphabetically by Name using Bubble Sort & strcmp().
- * ---------------------------------------------------------------------------- */
+
 void sortByName(struct Student students[], int student_count) {
     printf("\n--- [8] Sort by Name ---\n");
 
@@ -643,17 +581,7 @@ void sortByName(struct Student students[], int student_count) {
     displayAllStudents(students, student_count);
 }
 
-/* ----------------------------------------------------------------------------
- * Core Function 9: academicAdvisor()
- * Rule-based decision support system providing personalized academic advice:
- * - Prompts for SAP ID and searches record.
- * - Computes CGPA from available SGPAs.
- * - Categorizes performance using exact if-else threshold rules:
- *     * CGPA >= 8.5 : Excellent Performance – Maintain your current study pattern.
- *     * CGPA >= 7.0 : Good Performance – Continue working consistently.
- *     * CGPA >= 5.5 : Needs Improvement – Focus more on subjects with lower SGPA.
- *     * CGPA < 5.5  : Requires Immediate Attention – Seek academic guidance and improve your study routine.
- * ---------------------------------------------------------------------------- */
+
 void academicAdvisor(const struct Student students[], int student_count) {
     printf("\n--- [9] AI-Assisted Academic Advisor ---\n");
 
@@ -709,7 +637,7 @@ void academicAdvisor(const struct Student students[], int student_count) {
     printf("-----------------------------------------------------------------\n");
     printf("Performance Status  : ");
 
-    // Rule-based decision logic
+    
     if (cgpa >= 8.5f) {
         printf("Excellent Performance\n");
         printf("Advisor Advice      : Maintain your current study pattern.\n");
