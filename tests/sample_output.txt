@@ -1,0 +1,501 @@
+﻿============================================================
+        STUDENT RECORD AND RESULT MANAGEMENT SYSTEM         
+============================================================
+ Welcome to the College Student Record Management System!   
+ Developed for First-Year B.Tech CSE Project.               
+ Author: Manav Rawat (SAP ID: 590035827)                    
+============================================================
+
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [1] Add New Student ---
+Enter SAP ID (e.g., 590035827): Enter Roll Number: Enter Full Name: Enter Phone Number: Enter Email ID: Enter Year of Study (1-4): Enter Semester of Study (1-8): 
+--- SGPA Entry ---
+Enter SGPA for completed semesters (0.00 to 10.00, or enter -1 if pending):
+  Semester 1 SGPA (-1 if pending):   Semester 2 SGPA (-1 if pending): 
+[Success] Student record added successfully! (Total Students: 1)
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [1] Add New Student ---
+Enter SAP ID (e.g., 590035827): Enter Roll Number: Enter Full Name: Enter Phone Number: Enter Email ID: Enter Year of Study (1-4): Enter Semester of Study (1-8): 
+--- SGPA Entry ---
+Enter SGPA for completed semesters (0.00 to 10.00, or enter -1 if pending):
+  Semester 1 SGPA (-1 if pending):   Semester 2 SGPA (-1 if pending):   Semester 3 SGPA (-1 if pending): 
+[Success] Student record added successfully! (Total Students: 2)
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [1] Add New Student ---
+Enter SAP ID (e.g., 590035827): Enter Roll Number: Enter Full Name: Enter Phone Number: Enter Email ID: Enter Year of Study (1-4): Enter Semester of Study (1-8): 
+--- SGPA Entry ---
+Enter SGPA for completed semesters (0.00 to 10.00, or enter -1 if pending):
+  Semester 1 SGPA (-1 if pending):   Semester 2 SGPA (-1 if pending): 
+[Success] Student record added successfully! (Total Students: 3)
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [1] Add New Student ---
+Enter SAP ID (e.g., 590035827): Enter Roll Number: Enter Full Name: Enter Phone Number: Enter Email ID: Enter Year of Study (1-4): Enter Semester of Study (1-8): 
+--- SGPA Entry ---
+Enter SGPA for completed semesters (0.00 to 10.00, or enter -1 if pending):
+  Semester 1 SGPA (-1 if pending): 
+[Success] Student record added successfully! (Total Students: 4)
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [1] Add New Student ---
+Enter SAP ID (e.g., 590035827): Enter Roll Number: Enter Full Name: Enter Phone Number: Enter Email ID: Enter Year of Study (1-4): Enter Semester of Study (1-8): 
+--- SGPA Entry ---
+Enter SGPA for completed semesters (0.00 to 10.00, or enter -1 if pending):
+  Semester 1 SGPA (-1 if pending): 
+[Success] Student record added successfully! (Total Students: 5)
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [5] Display All Students ---
+Total Enrolled Students: 5 / 100
+=========================================================================================
+[1] SAP ID: 590035827    | Roll No: 101    | Name: Manav Rawat
+    Year: 1 | Semester: 2 | CGPA: 9.70  | Phone: 9876543210 | Email: manav@univ.edu
+    SGPA: [S1: 9.80, S2: 9.60, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[2] SAP ID: 590035102    | Roll No: 102    | Name: Priya Verma
+    Year: 2 | Semester: 3 | CGPA: 7.80  | Phone: 9876543211 | Email: priya@univ.edu
+    SGPA: [S1: 7.50, S2: 8.10, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[3] SAP ID: 590035203    | Roll No: 103    | Name: Rohan Mehta
+    Year: 2 | Semester: 2 | CGPA: 6.30  | Phone: 9876543212 | Email: rohan@univ.edu
+    SGPA: [S1: 6.20, S2: 6.40, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[4] SAP ID: 590035304    | Roll No: 104    | Name: Ankit Kumar
+    Year: 1 | Semester: 1 | CGPA: 4.80  | Phone: 9876543213 | Email: ankit@univ.edu
+    SGPA: [S1: 4.80, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[5] SAP ID: 590035405    | Roll No: 105    | Name: Zoya Khan
+    Year: 3 | Semester: 1 | CGPA: N/A   | Phone: 9876543214 | Email: zoya@univ.edu
+    SGPA: [S1: N/A, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [2] Search Student ---
+Enter SAP ID to search: 
+==================== STUDENT RECORD FOUND ====================
+SAP ID        : 590035827
+Roll Number   : 101
+Name          : Manav Rawat
+Phone Number  : 9876543210
+Email ID      : manav@univ.edu
+Year of Study : 1
+Semester      : 2
+Current CGPA  : 9.70 / 10.00 (2 sem evaluated)
+SGPA Details  :
+  Semester 1 : 9.80
+  Semester 2 : 9.60
+  Semester 3 : Not Entered / Pending
+  Semester 4 : Not Entered / Pending
+  Semester 5 : Not Entered / Pending
+  Semester 6 : Not Entered / Pending
+  Semester 7 : Not Entered / Pending
+  Semester 8 : Not Entered / Pending
+==============================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [3] Calculate CGPA ---
+Enter SAP ID of the student: 
+==================== CGPA CALCULATION RESULT ====================
+Student Name        : Manav Rawat
+SAP ID              : 590035827
+Roll Number         : 101
+Year of Study       : 1
+Current Semester    : 2
+Available Semesters : 2 of 8
+Calculated CGPA     : 9.70 / 10.00
+=================================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [4] Average CGPA by Year ---
+=========================================================================================
+                             AVERAGE CGPA BREAKDOWN BY YEAR                              
+=========================================================================================
+Year 1:
+  Total Enrolled Students : 2
+  Evaluated Students      : 2 (with valid SGPA records)
+  Average CGPA            : 7.25 / 10.00
+-----------------------------------------------------------------------------------------
+Year 2:
+  Total Enrolled Students : 2
+  Evaluated Students      : 2 (with valid SGPA records)
+  Average CGPA            : 7.05 / 10.00
+-----------------------------------------------------------------------------------------
+Year 3:
+  Total Enrolled Students : 1
+  Status                  : Enrolled students have no SGPA entered yet.
+  Average CGPA            : N/A
+-----------------------------------------------------------------------------------------
+Year 4:
+  Total Enrolled Students : 0
+  Status                  : No students enrolled in this year.
+  Average CGPA            : N/A
+-----------------------------------------------------------------------------------------
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [7] Sort by SAP ID ---
+
+[Success] Records successfully sorted by SAP ID in ascending order!
+
+--- [5] Display All Students ---
+Total Enrolled Students: 5 / 100
+=========================================================================================
+[1] SAP ID: 590035102    | Roll No: 102    | Name: Priya Verma
+    Year: 2 | Semester: 3 | CGPA: 7.80  | Phone: 9876543211 | Email: priya@univ.edu
+    SGPA: [S1: 7.50, S2: 8.10, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[2] SAP ID: 590035203    | Roll No: 103    | Name: Rohan Mehta
+    Year: 2 | Semester: 2 | CGPA: 6.30  | Phone: 9876543212 | Email: rohan@univ.edu
+    SGPA: [S1: 6.20, S2: 6.40, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[3] SAP ID: 590035304    | Roll No: 104    | Name: Ankit Kumar
+    Year: 1 | Semester: 1 | CGPA: 4.80  | Phone: 9876543213 | Email: ankit@univ.edu
+    SGPA: [S1: 4.80, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[4] SAP ID: 590035405    | Roll No: 105    | Name: Zoya Khan
+    Year: 3 | Semester: 1 | CGPA: N/A   | Phone: 9876543214 | Email: zoya@univ.edu
+    SGPA: [S1: N/A, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[5] SAP ID: 590035827    | Roll No: 101    | Name: Manav Rawat
+    Year: 1 | Semester: 2 | CGPA: 9.70  | Phone: 9876543210 | Email: manav@univ.edu
+    SGPA: [S1: 9.80, S2: 9.60, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [8] Sort by Name ---
+
+[Success] Records successfully sorted alphabetically by Name!
+
+--- [5] Display All Students ---
+Total Enrolled Students: 5 / 100
+=========================================================================================
+[1] SAP ID: 590035304    | Roll No: 104    | Name: Ankit Kumar
+    Year: 1 | Semester: 1 | CGPA: 4.80  | Phone: 9876543213 | Email: ankit@univ.edu
+    SGPA: [S1: 4.80, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[2] SAP ID: 590035827    | Roll No: 101    | Name: Manav Rawat
+    Year: 1 | Semester: 2 | CGPA: 9.70  | Phone: 9876543210 | Email: manav@univ.edu
+    SGPA: [S1: 9.80, S2: 9.60, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[3] SAP ID: 590035102    | Roll No: 102    | Name: Priya Verma
+    Year: 2 | Semester: 3 | CGPA: 7.80  | Phone: 9876543211 | Email: priya@univ.edu
+    SGPA: [S1: 7.50, S2: 8.10, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[4] SAP ID: 590035203    | Roll No: 103    | Name: Rohan Mehta
+    Year: 2 | Semester: 2 | CGPA: 6.30  | Phone: 9876543212 | Email: rohan@univ.edu
+    SGPA: [S1: 6.20, S2: 6.40, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[5] SAP ID: 590035405    | Roll No: 105    | Name: Zoya Khan
+    Year: 3 | Semester: 1 | CGPA: N/A   | Phone: 9876543214 | Email: zoya@univ.edu
+    SGPA: [S1: N/A, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [9] AI-Assisted Academic Advisor ---
+Enter SAP ID of the student: 
+==================== ACADEMIC ADVISOR REPORT ====================
+Student Name        : Manav Rawat
+SAP ID              : 590035827
+Roll Number         : 101
+Year of Study       : 1 | Current Semester: 2
+Evaluated Semesters : 2 of 8
+Calculated CGPA     : 9.70 / 10.00
+-----------------------------------------------------------------
+Performance Status  : Excellent Performance
+Advisor Advice      : Maintain your current study pattern.
+=================================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [9] AI-Assisted Academic Advisor ---
+Enter SAP ID of the student: 
+==================== ACADEMIC ADVISOR REPORT ====================
+Student Name        : Priya Verma
+SAP ID              : 590035102
+Roll Number         : 102
+Year of Study       : 2 | Current Semester: 3
+Evaluated Semesters : 2 of 8
+Calculated CGPA     : 7.80 / 10.00
+-----------------------------------------------------------------
+Performance Status  : Good Performance
+Advisor Advice      : Continue working consistently.
+=================================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [9] AI-Assisted Academic Advisor ---
+Enter SAP ID of the student: 
+==================== ACADEMIC ADVISOR REPORT ====================
+Student Name        : Rohan Mehta
+SAP ID              : 590035203
+Roll Number         : 103
+Year of Study       : 2 | Current Semester: 2
+Evaluated Semesters : 2 of 8
+Calculated CGPA     : 6.30 / 10.00
+-----------------------------------------------------------------
+Performance Status  : Needs Improvement
+Advisor Advice      : Focus more on subjects with lower SGPA.
+=================================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [9] AI-Assisted Academic Advisor ---
+Enter SAP ID of the student: 
+==================== ACADEMIC ADVISOR REPORT ====================
+Student Name        : Ankit Kumar
+SAP ID              : 590035304
+Roll Number         : 104
+Year of Study       : 1 | Current Semester: 1
+Evaluated Semesters : 1 of 8
+Calculated CGPA     : 4.80 / 10.00
+-----------------------------------------------------------------
+Performance Status  : Requires Immediate Attention
+Advisor Advice      : Seek academic guidance and improve your study routine.
+=================================================================
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [6] Delete Student ---
+Enter SAP ID of student to delete: Are you sure you want to delete record for 'Ankit Kumar' (SAP ID: 590035304)? (y/n): 
+[Success] Student record deleted successfully. Current count: 4
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+--- [5] Display All Students ---
+Total Enrolled Students: 4 / 100
+=========================================================================================
+[1] SAP ID: 590035827    | Roll No: 101    | Name: Manav Rawat
+    Year: 1 | Semester: 2 | CGPA: 9.70  | Phone: 9876543210 | Email: manav@univ.edu
+    SGPA: [S1: 9.80, S2: 9.60, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[2] SAP ID: 590035102    | Roll No: 102    | Name: Priya Verma
+    Year: 2 | Semester: 3 | CGPA: 7.80  | Phone: 9876543211 | Email: priya@univ.edu
+    SGPA: [S1: 7.50, S2: 8.10, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[3] SAP ID: 590035203    | Roll No: 103    | Name: Rohan Mehta
+    Year: 2 | Semester: 2 | CGPA: 6.30  | Phone: 9876543212 | Email: rohan@univ.edu
+    SGPA: [S1: 6.20, S2: 6.40, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+[4] SAP ID: 590035405    | Roll No: 105    | Name: Zoya Khan
+    Year: 3 | Semester: 1 | CGPA: N/A   | Phone: 9876543214 | Email: zoya@univ.edu
+    SGPA: [S1: N/A, S2: N/A, S3: N/A, S4: N/A, S5: N/A, S6: N/A, S7: N/A, S8: N/A]
+-----------------------------------------------------------------------------------------
+
+----------------------- MAIN MENU --------------------------
+1.  Add Student
+2.  Search Student
+3.  Calculate CGPA
+4.  Average CGPA by Year
+5.  Display All Students
+6.  Delete Student
+7.  Sort by SAP ID
+8.  Sort by Name
+9.  Academic Advisor
+10. Exit
+------------------------------------------------------------
+Enter your choice (1-10): 
+============================================================
+ Thank you for using the Student Record & Result System!
+ Exiting application. Have a wonderful day!
+============================================================
